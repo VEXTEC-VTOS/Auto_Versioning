@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Auto_Vesioning", "Auto_Vesioning.vfproj", "{9290B9D3-35E1-4C55-BF94-D7537924E4D0}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Auto_Versioning", "Auto_Versioning.vfproj", "{9290B9D3-35E1-4C55-BF94-D7537924E4D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
