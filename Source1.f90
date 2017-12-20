@@ -45,7 +45,7 @@ implicit none
     i=i+1
     ! write the updated version line in resource.rc
     write(86,1)dy,i
-1   format('FILEVERSION 1,00,',i5,',',i5)
+1   format('FILEVERSION 12,17,',i5,',',i5)
     rewind(84)
     write(84,*)i
     close(84)

@@ -68,7 +68,7 @@ VS_VERSION_INFO VERSIONINFO
 		VALUE "FileDescription", "Functions used by VPS-MICRO"
 		VALUE "FileVersion", "1.0.0.1"
 		VALUE "InternalName", "Resource.rc"
-		VALUE "LegalCopyright", "Copyright (C) 2017"
+		VALUE "LegalCopyright", "VEXTEC (C)"
 		VALUE "OriginalFilename", "Resource.rc"
 		VALUE "ProductName", "Micro"
 		END
