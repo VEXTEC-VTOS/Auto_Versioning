@@ -7,7 +7,7 @@ implicit none
     character(19) version_line
     Integer(4)  i,d,m,y,nd,ny,nm,dy
     integer::month(12)
-    
+    ! open the file that has the last version number (i)
     open(84,file='current.ver')
     call idate(m,d,y)
     dy=6210                     ! number of days from 1/1/2000 until 1/1/2017
@@ -32,8 +32,9 @@ implicit none
         dy=dy+month(nm)
     enddo
     dy=d+dy
-    
+    ! read the version number
     read(84,*)i
+    ! start creating the resource.rc by copying from resource.txt
     open(85,file='resource.txt')
     open(86,file='resource.rc')
     do while (vs_version.ne.'VS_VERSION_INFO VERSIONINFO')
@@ -41,15 +42,15 @@ implicit none
         vs_version=trim(vs_version)
         write(86,*)vs_version
     enddo
-    
-    
     i=i+1
+    ! write the updated version line in resource.rc
     write(86,1)dy,i
 1   format('FILEVERSION 1,00,',i5,',',i5)
     rewind(84)
     write(84,*)i
     close(84)
     read(85,*)
+    ! continue copying from resource.txt
     do while(.not.eof(85))
         read(85,'(63a)')line
         line=trim(line)
