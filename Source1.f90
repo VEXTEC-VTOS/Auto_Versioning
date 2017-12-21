@@ -3,7 +3,7 @@ program Auto_versioning
 
 implicit none
     
-    character(63) vs_version,line
+    character(100) vs_version,line
     character(19) version_line
     Integer(4)  i,d,m,y,nd,ny,nm,dy
     integer::month(12)
@@ -45,10 +45,13 @@ implicit none
     i=i+1
     ! write the updated version line in resource.rc
     write(86,1)dy,i
-1   format('FILEVERSION 12,17,',i5,',',i5)
+    write(86,2)dy,i
+1   format('FILEVERSION 17,12,',i5,',',i5)
+2   format('PRODUCTVERSION 17,12,',i5,',',i5)
     rewind(84)
     write(84,*)i
     close(84)
+    read(85,*)
     read(85,*)
     ! continue copying from resource.txt
     do while(.not.eof(85))
