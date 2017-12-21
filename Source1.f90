@@ -11,7 +11,7 @@ implicit none
     open(84,file='current.ver')
     call idate(m,d,y)
     dy=6210                     ! number of days from 1/1/2000 until 1/1/2017
-    ! if not leap years
+    ! days in each month if not leap years
     month(1)=31
     month(2)=28
     month(3)=31
