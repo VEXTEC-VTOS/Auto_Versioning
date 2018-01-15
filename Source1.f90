@@ -25,7 +25,7 @@ implicit none
     month(11)=30
     month(12)=31
     ! this algorithm is applicable until feb/2020
-    do ny=2017,y-1,1
+    do ny=17,y-1,1
         dy=dy+365
     enddo
     do nm=1,m-1,1
