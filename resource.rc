@@ -100,8 +100,8 @@
                       
  VS_VERSION_INFO VERSIONINFO                                                    
                       
-FILEVERSION 17,12, 6225,   10
-PRODUCTVERSION 17,12, 6225,   10
+FILEVERSION 17,12, 6619,   11
+PRODUCTVERSION 17,12, 6619,   11
  		FILEFLAGSMASK 0x3fL                                                          
                       
  #ifdef _DEBUG                                                                  
